@@ -17,8 +17,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        { this.state.todos.map((todo, index) =>
-          <ToDo key={index} description={todo.description} isCompleted={todo.isCompleted} />
+        <h2>ToDo List</h2>
+        { this.state.todos.map( todo =>
+          <ToDo description={todo.description} isCompleted={todo.isCompleted} />
         )}
       </div>
     );
