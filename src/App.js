@@ -6,7 +6,6 @@ class App extends Component {
   constructor(props) {
     super(props);
       this.state = {
-        owner: 'Theran',
         todos: [
           { description: 'Walk the Cat', isCompleted: true },
           { description: 'Throw the dishes away', isCompleted: false },
@@ -18,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>{this.state.owner}'s React ToDo App</h1>
+        <h1>React ToDo App</h1>
         { this.state.todos.map(todo =>
           <ToDo description={todo.description} isCompleted={todo.isCompleted} />
         )}
