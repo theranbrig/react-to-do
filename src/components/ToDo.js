@@ -4,7 +4,8 @@ class ToDo extends Component {
     render() {
         return (
             <div>
-                <li> A todo will go here </li>
+                <input type="checkbox" checked={ this.props.isCompleted }/>
+                <li>{ this.props.description }</li>
             </div>
         );
     }
